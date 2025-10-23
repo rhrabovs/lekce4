@@ -46,6 +46,8 @@ public class Main {
     }
 
     /*
-    v jave su hlidane a nehlidane vujimky
+    v jave su hlidane a nehlidane vyjimky
+    hlidane vyjimky maji za slovem extends jen klicove slovo Exception
+    nehlidane vyjimky maji klicove slovo
      */
 }
