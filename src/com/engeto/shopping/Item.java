@@ -3,7 +3,6 @@ package com.engeto.shopping;
 
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Item {
@@ -16,7 +15,7 @@ public class Item {
 
     // konstuktory
     public Item(String description, BigDecimal price, LocalDateTime reservationTime,
-                boolean isonStock, int quantity,Category category) throws ShoppingCartException {
+                boolean isOnStock, int quantity,Category category) throws ShoppingCartException {
         this.description = description;
         //this.price = price;
         setPrice(price);
