@@ -84,4 +84,9 @@ public class Item {
         this.category = category;
     }
 
+    @Override
+    public String toString() {
+        return "Kosik zakaznika " + description + '\'' +
+                "cena=" + price;
+    }
 }
