@@ -34,6 +34,7 @@ public class Item {
         return description;
     }
 
+    /*
     public void setDescription(String description) {
         this.description = description;
     }
@@ -41,7 +42,7 @@ public class Item {
     public BigDecimal getPrice() {
         return price;
     }
-
+    */
     public void setPrice(BigDecimal price) throws ShoppingCartException {
         if (BigDecimal.ZERO.compareTo(price) > 0) {
             throw new ShoppingCartException("Cena nesmi byt zaporna! Zadano: "+price);
@@ -51,7 +52,7 @@ public class Item {
         }
         this.price = price;
     }
-
+    /*
     public LocalDateTime getReservationTime() {
         return reservationTime;
     }
@@ -75,15 +76,15 @@ public class Item {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
-
+    */
     public Category getCategory() {
         return category;
     }
-
+    /*
     public void setCategory(Category category) {
         this.category = category;
     }
-
+    */
     @Override
     public String toString() {
         return "Kosik zakaznika " + description + '\'' +

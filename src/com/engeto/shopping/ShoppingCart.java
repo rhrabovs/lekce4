@@ -16,6 +16,7 @@ public class ShoppingCart {
         items.add(item);
     }
 
+    /*
     public Item getItem(int index) {
         return items.get(index);
     }
@@ -23,7 +24,7 @@ public class ShoppingCart {
     public List<Item> getAllItems() {
         return new ArrayList<Item>();  // vytvori kopii meho seznamu, neposkytne muj seznam
     }
-
+    */
     public void sortItems() {
         items.sort(Comparator.comparing(Item::getDescription)); // vytvori novou tridu komparator, ktery bude porovnavat dve polozky na zaklade popisu
     }
