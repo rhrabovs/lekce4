@@ -38,11 +38,11 @@ public class Item {
     public void setDescription(String description) {
         this.description = description;
     }
-
+    */
     public BigDecimal getPrice() {
         return price;
     }
-    */
+
     public void setPrice(BigDecimal price) throws ShoppingCartException {
         if (BigDecimal.ZERO.compareTo(price) > 0) {
             throw new ShoppingCartException("Cena nesmi byt zaporna! Zadano: "+price);
@@ -87,7 +87,6 @@ public class Item {
     */
     @Override
     public String toString() {
-        return "Kosik zakaznika " + description + '\'' +
-                "cena=" + price;
+        return description + ": " + " (" + price+" Kc)";
     }
 }

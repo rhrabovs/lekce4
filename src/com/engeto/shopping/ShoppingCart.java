@@ -26,11 +26,21 @@ public class ShoppingCart {
     }
     */
     public void sortItems() {
-        items.sort(Comparator.comparing(Item::getDescription)); // vytvori novou tridu komparator, ktery bude porovnavat dve polozky na zaklade popisu
+        items.sort(Comparator.comparing(Item::getDescription)); // vytvori novou tridu ktera bude potomkem komparatoru,
+                                                                // ktery bude porovnavat dve polozky na zaklade popisu
+                                                                // kdyby jsme tam nechali jen zapis items.sort(),
+                                                                // tak by nevedel podle ceho ma tridit
+        // zapis getDescription znamena, ze polozky bude porovnavat na zaklade popisu
+    }
+
+    public void sortItems(Comparator<Item> comparator){
+        items.sort(comparator);
+        // muzeme ten Comparator dat do metody primo
+        // budu mit metodu sort, kde muzu jako parametr uvest primo comparator
     }
 
     @Override
     public String toString() {
-        return "Kosik zakaznika "+owner +" polozky "+items;
+        return "Kosik zakaznika "+owner +":\n"+items;
     }
 }
