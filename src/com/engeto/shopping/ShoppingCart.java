@@ -25,12 +25,21 @@ public class ShoppingCart {
         return new ArrayList<Item>();  // vytvori kopii meho seznamu, neposkytne muj seznam
     }
     */
+
+    // puvodni zapis metody sortItems bez doplneni vychoziho razeni do tridy Item
+    /*
     public void sortItems() {
         items.sort(Comparator.comparing(Item::getDescription)); // vytvori novou tridu ktera bude potomkem komparatoru,
                                                                 // ktery bude porovnavat dve polozky na zaklade popisu
                                                                 // kdyby jsme tam nechali jen zapis items.sort(),
                                                                 // tak by nevedel podle ceho ma tridit
         // zapis getDescription znamena, ze polozky bude porovnavat na zaklade popisu
+    }
+    */
+
+    // novy zapis metody sortItem() po doplneni vychoziho razeni do tridy Item
+    public void setItems() {
+        items.sort(null);
     }
 
     public void sortItems(Comparator<Item> comparator){
