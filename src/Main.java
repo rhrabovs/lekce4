@@ -59,7 +59,7 @@ public class Main {
             cart.addItem(new Item("Syr 30dkg",new BigDecimal("98")));
 
             System.out.println(cart);
-            cart.sortItems();
+            cart.sortItems(null);
             System.out.println("(1) == Po serazeni podle popisu ==");
             System.out.println(cart);
 
