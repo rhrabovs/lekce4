@@ -1,5 +1,6 @@
 package com.engeto.shopping;
 
+//vyctovy typ
 public enum Category {
     FOOD("jidlo"),
     CONSUMABLES("spotrebni zbozi"),
